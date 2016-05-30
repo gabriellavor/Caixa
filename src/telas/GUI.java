@@ -5,13 +5,13 @@ import java.sql.*;
 import conexao.ModuloConexao;
 import javax.swing.JOptionPane;
 
-public class CaixaEletronicoTela extends javax.swing.JFrame {
+public class GUI extends javax.swing.JFrame {
 
     Connection conexao = null;
     PreparedStatement pst = null;
     ResultSet resultado = null;
 
-    public CaixaEletronicoTela() {
+    public GUI() {
         initComponents();
         conexao = ModuloConexao.conectar();
 
@@ -241,14 +241,7 @@ public class CaixaEletronicoTela extends javax.swing.JFrame {
         }
     }
 
-    public static void main(String args[]) {
-
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new CaixaEletronicoTela().setVisible(true);
-            }
-        });
-    }
+  
     // Variables declaration - do not modify                     
     private javax.swing.JButton btnCotaMinima;
     public static final javax.swing.JButton btnEfetuarSaque = new javax.swing.JButton();

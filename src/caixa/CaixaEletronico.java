@@ -3,6 +3,7 @@ package caixa;
 import bean.Caixa;
 import dao.CaixaDAO;
 import interfaces.ICaixaEletronico;
+import telas.GUI;
 
 public class CaixaEletronico implements ICaixaEletronico {
 
@@ -279,6 +280,12 @@ public class CaixaEletronico implements ICaixaEletronico {
         return false;
         
     }
+    
+    public static void main(String args[]) {
+    	GUI janela = new GUI();
+    	janela.setVisible(true);
+    }
+    
     
      
 }
